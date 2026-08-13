@@ -13,6 +13,8 @@ document.write(`<p>O resultado da multiplicação de ${n1} por ${n2} é igual a 
 
 const number = 4;
 
+
+//função com mais de um retorno
 function parImpar(number){
     if (number % 2 === 0){
         return "par";
