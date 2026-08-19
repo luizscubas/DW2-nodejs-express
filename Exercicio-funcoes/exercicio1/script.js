@@ -20,15 +20,15 @@ divisao(n1, n2);
 
 //função com retorno
 
-const n1 = 10;
-const n2 = 4;
-const n3 = 5;
+const num1 = 10;
+const num2 = 4;
+const num3 = 5;
 
 function multiplicar(n1, n2, n3){
     return n1 * n2 * n3;
 }
 
-document.write(`O resultado da multiplicação de ${n1} por ${n2} por ${n3} é igual a ${multiplicar(n1, n2, n3)}`);
+document.write(`O resultado da multiplicação de ${num1} por ${num2} por ${num3} é igual a ${multiplicar(num1, num2, num3)}`);
 
 //função com mais de um retorno
 
@@ -47,8 +47,8 @@ document.write(`O usuário é ${idade(numero)}`);
 
 //média =(nota1 + nota2) / 2
 const aprovado = function(){
-    const notas = [10, 5,];
-    const media = (nota1 + nota2) / 2;
+    const notas = [10, 5];
+    const media = (notas[0] + notas[1]) / 2;
 
     if (media <= 5 ){
         return "Reprovado";
@@ -72,15 +72,15 @@ document.write(`<p>O Triplo do número é ${triplo(y)} .</p>`);
 
 const calc = (n1, n2, n3, n4, op) => { return eval(`${n1} ${op} ${n2} ${op} ${n3} ${op} ${n4}`);};
 
-const n1 = 10;
-const n2 = 20;
-const n3 = 30;
-const n4 = 40;
+const a = 10;
+const b = 20;
+const c = 30;
+const d = 40;
 const op = "+";
 
-document.write(`<p>O resultado da operação é ${calc(n1, n2, n3, n4, op)} .</p>`);
+document.write(`<p>O resultado da operação é ${calc(a, b, c, d, op)} .</p>`);
 
 const user = (function(Nome){
-   document.writeln(`<p>Olá! caro usuário ${user}</p>`); 
+   document.writeln(`<p>Olá! caro usuário ${Nome}</p>`); 
    
 })("Luiz");
