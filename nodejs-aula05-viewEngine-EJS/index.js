@@ -7,7 +7,8 @@ const app = express() // Criando uma instância do Express
 
 // configurando o ejs
 app.set('view engine', 'ejs');
-
+//configurando a pasta (public), para acessar os arquivos css e imagens
+app.use(express.static('public'));
 // aqui irão as rotas do site
 // rota principal
 // .get() -> cria uma rota na aplicação
