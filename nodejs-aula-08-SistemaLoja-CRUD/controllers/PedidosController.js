@@ -1,3 +1,6 @@
+import express from "express";
+const app = express.Router();
+
 // ROTA PEDIDOS
 app.get("/pedidos",function(req,res){
     const pedidos = [
@@ -10,3 +13,5 @@ app.get("/pedidos",function(req,res){
         pedidos: pedidos
     })
 })
+
+export default app
